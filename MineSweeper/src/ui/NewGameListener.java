@@ -24,10 +24,10 @@ public class NewGameListener implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent arg0) {
-
-		logic.newGame();
 		
-		frame.setPreferredSize(new Dimension((logic.getWidth()+1)*UserInterface.CELL_SIZE,(logic.getHeight()+4)*UserInterface.CELL_SIZE));
+		drawingboard.setSize();
+		
+		logic.newGame();
 		
 		frame.pack();
 		

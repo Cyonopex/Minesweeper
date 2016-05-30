@@ -1,5 +1,6 @@
 package ui;
 
+import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Image;
 
@@ -31,5 +32,9 @@ public class DrawingBoard extends JPanel {
 				graphics.drawImage(img[cell], j*UserInterface.CELL_SIZE, i*UserInterface.CELL_SIZE, null);
 			}
 		}
+	}
+	
+	public void setSize() {
+		super.setPreferredSize(new Dimension(UserInterface.CELL_SIZE * logic.getWidth() , UserInterface.CELL_SIZE * logic.getHeight()));
 	}
 }

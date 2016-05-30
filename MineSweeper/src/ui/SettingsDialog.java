@@ -85,9 +85,9 @@ public class SettingsDialog {
 				mines.setText(oldMines+"");
 			}
 			
-			logic.newGame();
+			drawingboard.setSize();
 			
-			frame.setPreferredSize(new Dimension((logic.getWidth()+1)*UserInterface.CELL_SIZE,(logic.getHeight()+4)*UserInterface.CELL_SIZE));
+			logic.newGame();
 			
 			frame.pack();
 			
